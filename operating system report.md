@@ -49,7 +49,7 @@ In this section, the structure of each module will be introduced and the functio
 Super block is a segment of metadata describing the file system on a block device. Each super block struct is 17916 bytes. The block records information about our file system, including information necessary to mount a file system.  
 Also, the information stored in the super block will be exploited by different
 functions.  
-![Pasted image 20210527103618.png](file:///D:/garden/files/Pasted%20image%2020210527103618.png)
+![Pasted image 20210527103618](https://user-images.githubusercontent.com/54618402/123564907-bcd18200-d7ed-11eb-9b63-70cbd164e291.png)]
 
 | name                | type           | commit                                                                                                                                        |
 | ------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -98,7 +98,8 @@ inodes). We can also allocate new block in free space after all this inodes are 
 
 ##### Implementation of inode
 Follows is the inode structure in the project. This inode can be used as 2 kinds of inodes, which are file inode and directory inode, and what kind of inode it in on earth can be deducted from inode_type field. The inode is implemented by struct in c++ too.
-![media/Pasted image 20210527112239.png](file:///D:/garden/files/media/Pasted%20image%2020210527112239.png)
+
+![Pasted image 20210527112239](https://user-images.githubusercontent.com/54618402/123564950-d7a3f680-d7ed-11eb-95dc-8ab03cbbb987.png)
 
 | variable           | explanation                                                        |
 | ------------------ | ------------------------------------------------------------------ |
@@ -116,7 +117,8 @@ The easiest way to manage block is by contiguous allocation. we allocate everyth
 The block is stored in a 2-D array in c++ in this project, the first dimension is the block number and the second dimension controls offset.   
 Theoretically, the size of free space should equal to total block number minus the sum of block used to store super block and inodes. However, I design reserve some "real" free block for future use. Hence the free block number is 14400.  
 Finally, the number of available free block number and the utilization can be informed by querying superblock
-![media/Pasted image 20210527152650.png](file:///D:/garden/files/media/Pasted%20image%2020210527152650.png)
+
+![Pasted image 20210527152650](https://user-images.githubusercontent.com/54618402/123564967-e25e8b80-d7ed-11eb-8df4-4b237c2da385.png)
 
 ### Function to organize address structure
 #### Inode management
@@ -417,4 +419,5 @@ As a result, I mastered how to view memory byte by byte, how to set up break poi
 I spent around 1 month in this project due to the lack of knowledge of c++. Although design a file system is not difficult for me, the implementation details always annoy me. When things works, every effort worth.  
 We have to design the structure of the project beforehand, so that we will have a clear mind when implementation. Design by layer is a common choice, Layering useful for reducing complexity and redundancy, but adds overhead and can decrease performance.  
 In this project, I implemented what we have learned in operating system into practice. Also have a deeper understanding of the file system. However, the content of operating system is astronomical, we still have a lot to learn. 
+
 [^1]: https://en.wikipedia.org/wiki/File_system
