@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-21T03:39:52.019Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="MxSTYUrHsn4AxUH3gqna" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-21T04:36:52.330Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="vHKAvsgSe9ELWhtmeAw3" version="14.9.3" type="github">
   <diagram id="71C2lTWhqn7iXaAkYp9l" name="Page-1">
     <mxGraphModel dx="1106" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -112,11 +112,11 @@
         <mxCell id="RPoBLLqZ5S25w6Av_XMs-9" value="create_single_compressed_diff_stream" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="590" y="540" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RPoBLLqZ5S25w6Av_XMs-25" value="handle command line parameter &lt;br style=&quot;font-size: 14px&quot;&gt;to global variable or interface&lt;br&gt;-D: directory&lt;br&gt;-f:force overwrite" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="315" y="115" width="220" height="70" as="geometry" />
+        <mxCell id="RPoBLLqZ5S25w6Av_XMs-25" value="&lt;font color=&quot;#b5739d&quot;&gt;handle command line parameter &lt;br style=&quot;font-size: 14px&quot;&gt;to global variable or interface&lt;br&gt;set up compress plugin&lt;br&gt;check sum plugin(only for directory)&lt;br&gt;&lt;/font&gt;&lt;b&gt;-c: compress plugin&lt;/b&gt;&lt;br&gt;&lt;b&gt;-D: directory&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="305" y="95" width="240" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="RPoBLLqZ5S25w6Av_XMs-31" value="&lt;b&gt;-C:checksum&lt;/b&gt;&lt;br&gt;lots of dir option" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="105" y="320" width="110" height="40" as="geometry" />
+        <mxCell id="RPoBLLqZ5S25w6Av_XMs-31" value="&lt;b&gt;-C:checksum plugin&lt;/b&gt;&lt;br&gt;lots of dir option" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="90" y="165" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="RPoBLLqZ5S25w6Av_XMs-32" value="-c:compress type" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="340" y="680" width="120" height="20" as="geometry" />
@@ -139,7 +139,10 @@
           <mxGeometry x="370" y="300" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RPoBLLqZ5S25w6Av_XMs-37" value="&lt;font&gt;-s:&amp;nbsp;&lt;span style=&quot;background-color: transparent ; font-size: 13.6px&quot;&gt;all file load as Stream; fast;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;fontColor=#97D077;" vertex="1" parent="1">
-          <mxGeometry x="597" y="300" width="200" height="20" as="geometry" />
+          <mxGeometry x="620" y="300" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RPoBLLqZ5S25w6Av_XMs-40" value="&lt;font color=&quot;#b5739d&quot;&gt;provide patch check&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=14;fontColor=#97D077;" vertex="1" parent="1">
+          <mxGeometry x="700" y="480" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
